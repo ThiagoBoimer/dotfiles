@@ -84,13 +84,13 @@ git clone https://github.com/tmux-plugins/tpm ~/dotfiles/.tmux/plugins/tpm
 3. Download last version of FiraCode Nerd font
 
 ```
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/FiraCode.zip
+  wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/FiraCode.zip
 ```
 
 4. Unzip and move files move file to fonts dir
 
 ```
-sudo unzip ~/Downloads/FiraCode.zip /usr/share/fonts
+sudo unzip -o FiraCode.zip -d /usr/share/fonts
 ```
 
 ### Installing neovim
@@ -101,19 +101,6 @@ sudo unzip ~/Downloads/FiraCode.zip /usr/share/fonts
 sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt-get update
 sudo apt-get install neovim
-```
-
-2. Install NVChad
-
-```
-git clone -b v2.0 https://github.com/NvChad/NvChad ~/dotfiles/.config/nvim --depth 1
-```
-
-3. Start neovim
-At start it will download LSP and everything we need
-
-```
-nvim
 ```
 
 ### Install stow
@@ -137,3 +124,12 @@ stow --adopt .
 ```
 
 *this can lead to some issues if the files in .dotfiles are different than the ones already present*
+
+### Starting nvim
+
+1. Start neovim
+At start it will download LSP and everything we need
+
+```
+nvim
+```
