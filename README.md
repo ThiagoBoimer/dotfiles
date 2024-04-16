@@ -28,7 +28,15 @@ chsh -s $(which zsh)
 
 4. Log out and back to use the shell
 
-5. Activate syntax highlighting
+5. Install ooh-my-zsh
+
+- Run the command below or folow https://github.com/ohmyzsh/ohmyzsh?tab=readme-ov-file#basic-installation
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+6. Activate syntax highlighting
 
 - Install zsh-syntax-highlighting
 
@@ -40,6 +48,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 
 ```
 git clone https://github.com/catppuccin/zsh-syntax-highlighting.git
+mkdir .zsh
 cd zsh-syntax-highlighting/themes/
 cp -v catppuccin_mocha-zsh-syntax-highlighting.zsh ~/.zsh/
 ```
