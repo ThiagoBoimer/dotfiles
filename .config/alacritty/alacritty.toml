@@ -9,7 +9,7 @@ import = ["~/.config/alacritty/catppuccin-mocha.toml"]
 # Normal font style
 normal = { family = "FiraCode Nerd Font Mono", style = "Regular" }
 
-size = 11
+size = 14
 
 [env]
 
